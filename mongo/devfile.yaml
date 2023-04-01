@@ -27,6 +27,9 @@ components:
       - name: database-port 
         targetPort: 27017
         path: /
+        protocol: tcp
+        secure: false
+        exposure: internal
 commands:
   - id: build-image
     apply:
